@@ -1,2 +1,2 @@
-# prueba-frontend
-Desarrollo Frontend 
+# Prueba Frontend 
+## Autor: Marlady Ortiz Ávila
