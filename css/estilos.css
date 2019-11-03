@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+/*******   HEADER    ********/
+header {
+	background: url(../img/Header.png);
+	background-size: cover;	
+	background-position: bottom;
+	height: 650px;
+}
+header, img{
+	width: 100%;
+}
+nav .navbar-collapse{
+	justify-content: flex-end;
+}
+nav .navbar-nav a:hover::after {
+    width: 100%;
+}
+nav .navbar-nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s;
+    border: none;
+}
+.container_header, .container_video {
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;    
+}
+.container_header{	    
+    top: 30%;
+}
+.container_video{
+	top: -50%;
+}
+.container_header, .container_video, a{
+	color: #fff !important;
+}
+.container_video i{
+		margin-bottom: 2em;
+	}
+
+
+/*******   MAIN    ********/
+.container_info{
+	display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
+}
+.container_info h2, .container_info p{
+	margin-bottom: 1.2em !important;
+}
+.bkg{
+	background-color: #ECECEC;
+	padding: 3em 0;
+}
+.card{
+	text-align: center;
+}
+.card-body{
+	margin: 2em 1em;
+}
+h3.card-title{
+	font-size: 1.2em;
+	line-height: 2em;
+}
+i{
+	font-size: 2em;
+	color: #fff;
+    margin-bottom: 1em;
+}
+.card i {
+	background-color: #325DFF;
+    padding: 0.6em;
+    border-radius: 50%;   
+}
+.projects {
+	margin-top: -8em;
+}
+
+/*******   ELEMENTS    ********/
+.navbar-brand{
+	font-family: 'Dancing Script', cursive;
+	font-size: 2em;
+	font-weight: bold;
+}
+p, .nav-link{
+	font-family: 'Poppins', sans-serif;      	
+}
+h1,h2,button {
+	font-family: 'Lato', sans-serif;
+	font-weight: light
+}
+.btn{
+	border: 2.25rem !important;
+	padding: .5rem 1.5rem !important;
+	border-radius: 2.25rem !important;
+	margin-top: 1em;
+}
+.btn:hover, .btn:focus, footer{
+	background-color: #3246FF !important; 
+}
+.btn-primary{
+	background-color: #325DFF !important;
+}
+footer p{
+	color: #fff;
+}
+
+/*******   MEDIA QUERIES    ********/
+
+@media screen and (max-width: 768px) {	
+	h2{
+		font-size: 1.5rem;
+	}
+	.btn {
+		font-size: 0.8rem;
+	}
+	.container_header, .container_video{
+		padding: 0 3em;
+	}
+	.container_video p{
+		display: none;
+	}
+	.container_video i{
+		margin-bottom: 0.5em;
+	}
+	nav .navbar-nav a::after {    
+	    content: none;
+	}
+	nav .navbar-nav a{
+		border-bottom: 1px solid #fff;
+	}
+	.projects {
+	margin-top: -2em;
+}
+
+}
+@media screen and (max-width: 576px) {	
+	section p{
+		display: none;
+	}
+	.container-fluid{
+		padding: 0;
+	}
+	h2{
+		font-size: 1.1rem;
+	}
+	.container_info{
+		margin: 0 1rem;
+	}
+	.btn{
+		font-size: 0.5em;
+	}
+}
+
